@@ -602,40 +602,40 @@
   /* scroll reveal */
   .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .reveal.visible { opacity: 1; transform: none; }
-/* Hero Image Card */
+/* Hero Card */
 
 .mmf-hero{
     width: 100%;
-    min-height: 100vh;
+
+    padding: 10px; /* small edge gap */
+    box-sizing: border-box;
 
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    padding: 10px; /* minimal edge separation */
-    box-sizing: border-box;
 }
 
 .mmf-hero-image{
     width: 100%;
-    max-width: 620px;
+    height: auto;
 
-    aspect-ratio: 3 / 4; /* vertical 4:3 */
+    aspect-ratio: 3 / 4; /* vertical */
+
     object-fit: cover;
 
     display: block;
+
+    background: #fff;
  }
 </style>
 </head>
 <body>
 
 <!-- NAV -->
- <!-- Hero Image -->
-<section class="mmf-hero-frame">
+<section class="mmf-hero">
     <img
         src="New Project 19 [D427CC6].png"
-        alt="Hero Image"
-        class="mmf-hero-portrait"
+        alt="Hero"
+        class="mmf-hero-image"
     >
 </section>
 <nav>
