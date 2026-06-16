@@ -201,28 +201,7 @@
     z-index: 1;
   }
 
-  /* SVG logo large */
-  .hero-logo-wrap {
-    position: relative;
-    width: clamp(260px, 28vw, 400px);
-    height: clamp(260px, 28vw, 400px);
-  }
 
-  .hero-logo-wrap::before {
-    content: '';
-    position: absolute; inset: -20px;
-    border: 1px solid var(--steel);
-    animation: spin 20s linear infinite;
-  }
-
-  @keyframes spin {
-    to { transform: rotate(360deg); }
-  }
-
-  .hero-logo-wrap svg {
-    width: 100%; height: 100%;
-    opacity: 0.95;
-  }
 
   /* ── STATS BAR ── */
   .stats {
